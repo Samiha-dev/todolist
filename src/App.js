@@ -1,25 +1,19 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import Header from './Header/Header';
+import List from './List/List';
+import SubmitForm from './SubmitForm/SubmitForm';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render(){
+    return (
+      <div className="App">
+        <Header/>
+        <List/>
+        <SubmitForm/>
+      </div>
+    )
+  } 
 }
 
 export default App;
